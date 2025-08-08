@@ -1,40 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/create-next-app).
+<div align="center">
+  <h1>Fibonacci Sequence</h1>
+  <p>API สำหรับคำนวณค่า <a href="https://en.wikipedia.org/wiki/Fibonacci_sequence">Fibonacci Sequence</a> ตั้งแต่ช่วง (1 - 100) ซึ่งโปรเจคสร้างขึ้นด้วย <a href="https://nextjs.org/">Next.js</a></p>
+</div>
 
-## Getting Started
+## 🔨 ข้อกำหนดขั้นต่ำ
 
-First, run the development server:
+- [Node.js](https://nodejs.org): 18.18 มากกว่าหรือเท่ากับ
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🔥 เริ่มต้นโปรเจค
+
+เริ่มพัฒนาโปรเจคกับเฟรมเวิร์ค [Next.js ](https://nextjs.org/) เพื่อช่วยให้พัฒนาง่ายขึ้น
+
+1. ติดตั้งส่วนประกอบที่จำเป็นของโปรเจคด้วยคำสั่ง
+
+```sh
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. เริ่มพัฒนาโปรเจคด้วยการเปิดเซิร์ฟเวอร์พัฒนาด้วยคำสั่ง
 
-You can start editing the page by modifying `app/route.ts`. The page auto-updates as you edit the file.
+```sh
+npm run dev
+```
 
-## Learn More
+3. เปิดเว็บไซต์ที่ http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+คุณสามารถเริ่มแก้ไขโค้ดได้ที่ `app/route.ts` เมื่อโค้ดมีการเปลี่ยนจะรีโหลดให้โดยอัตโนมัติ **(Hot Reload)**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏗️ สร้างโปรเจค
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+สร้างโปรเจคหรือ Build โปรเจคเพื่อนำไปใช้จริง เนื่องจากประสิทธิภาพจะดีกว่าการรันคำสั่งสำหรับพัฒนา
 
-## Deploy on Vercel
+1. ทำการ Build โปรเจคด้วยคำสั่ง
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. เปิดโปรเจคที่ได้ Build เสร็จแล้วด้วยคำสั่ง
 
-## API Routes
+```sh
+npm start
+```
 
-This directory contains example API routes for the headless API app.
+3. เปิดดูตัวอย่างเว็บไซต์ได้ที่ http://localhost:3000
 
-For more details, see [route.js file convention](https://nextjs.org/docs/app/api-reference/file-conventions/route).
+หากโค้ดมีการเปลี่ยนแปลงจากการ Build ล่าสุด คุณจำเป็นต้องรัน `npm run build` ใหม่เพื่อให้การเปลี่ยนแปลงมีผล
+
+## 📚️ ศึกษาเพิ่มเติม
+
+คุณสามารถศึกษาวิธีการพัฒนา API ได้ผ่านเอกสารของ Next.js ในหัวข้อ [route.js file convention](https://nextjs.org/docs/app/api-reference/file-conventions/route)
